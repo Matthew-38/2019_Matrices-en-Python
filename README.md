@@ -1,8 +1,6 @@
 # Matrix Learning (with Python)
 Numpy contains some useful tools for manipulating matrices, but without looking at them*, I made my own "Matrix" class with several methods to manipulate it, with the aim of mastering Python functions like Map, and the usage of Lambda.
 
-*Looking at Numpy afterwards, I noticed that their implimentation has some similarities with mine (the same idea of multi-dimentional arrays used, and a similar printing presentation.
-
 [Version Française en bas]
 
 # Background
@@ -30,6 +28,8 @@ Printing a matrix gives the following layout:
 Since the matrix data are immutable, each method returns a new matrix, with the exception of Matrix.print() which just displays the matrix in the console.
 
 I have put no license for this project, because it is just a little code which is not for serious usage. But if you want to do something with it, be my guest.
+
+*Looking at Numpy afterwards, I noticed that their implimentation has some similarities with mine (the same idea of multi-dimentional arrays used, and a similar printing presentation).
 
 ###############################################################################################
 # Version Française
