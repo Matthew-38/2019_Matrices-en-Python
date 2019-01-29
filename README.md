@@ -10,6 +10,9 @@ Numpy contains some useful tools for manipulating matrices, but without looking 
 4. To train myself Python good coding practices, using Pycharm which has a rather strict syntax convention suggestion system.
 5. To practice a little (but not seriously) the Functional Programming paradigm by making my Matrix class immutable (which will have the side effect of making them quicker - although it means more complicated code within the class).
 
+# Usage
+This simple script needs Python 3 to run, notable because it uses the type hinting among other things. 
+
 # Explanation
 This class construcs an object in the form of a tuple of tuples. E.g.:
 
@@ -43,6 +46,9 @@ Numpy contient déjà des outils pour manipuler les matrices, mais sans les rega
 3. Pour pratiquer l'usage de Map, Reduce and Filter. Pour l'instant je me suis bien servi de Map, mais pas les autres.
 4. Pour m'entrainer de bonnes pratiques de programmation Python
 5. Pratiquer un peu (mais pas strictement) le paradigme de programmation fonctionnelle en faisant les matrices immutables (ce qui a pour conséquence de rendre plus vites leurs méthodes.
+
+# Usage
+Ce script a besoin de Python 3 parce que j'y ai mis du "Type Hinting"
 
 # Explication
 Cette classe construit un objet dans la forme d'un tuple de tuples, exemple : 
