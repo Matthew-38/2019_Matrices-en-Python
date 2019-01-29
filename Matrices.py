@@ -86,7 +86,7 @@ class Matrix(object):
         else:
             raise ValueError("Error, attempting to add matrices of different orders")
 
-    def invert(self):
+    def transpose(self):
         temp = [[] for a in range(self.order[0])]  # initialise list with empty lists as many as there are columns normally
         for i in range(self.order[1]):
             for j in range(self.order[0]):
@@ -95,7 +95,7 @@ class Matrix(object):
 
     def matrix_multiply(self, other=()):
         if self.order[1] == other.order[0]:
-            A = self.invert().matrix  # Use inverted matrix rows and columns for easier manipulation
+            A = self.transpose().matrix  # Use inverted matrix rows and columns for easier manipulation
             B = other.matrix
             temp = []
             for finalRow in range(len(A)):
@@ -104,7 +104,7 @@ class Matrix(object):
                     temp_inner.append(sum(a*b for a,b in zip(A[finalRow], B[finalCol])))
                     # temp_inner.append(reduce(lambda a, b: a * b, A[finalRow], B[finalCol]))  # This does NOT work. An example of where NOT to use reduce. The result is not reduced, but super super increased!
                 temp.append(temp_inner)
-            return Matrix(temp).invert()
+            return Matrix(temp).transpose()
         else:
             raise ValueError("Error, attempting to multiply matrices where the number of columns in the first is not equal to the number of rows in the second. Maybe you got the argument order mixed up?")
 
@@ -115,7 +115,7 @@ if __name__ == "__main__":
     myMatrix.print()
     myMatrix.scalar_multiply(4).print()
     myMatrix.matrix_add(myMatrix).print()
-    myMatrix.invert().print()
+    myMatrix.transpose().print()
     print("-----multiplication tests------")
     matrixA = Matrix(((4, 2), (7, 3), (6, 1)))
     matrixB = Matrix(((8, 5, 9),))  # Column matrix
