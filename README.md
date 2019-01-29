@@ -5,7 +5,7 @@ Numpy contains some useful tools for manipulating matrices, but without looking 
 
 [Version Française en bas]
 
-#Background
+# Background
 1. Recently I was chatting with my brother and I explained to him that by using mathematics in programming, I have come to understand them much better, and remember. So I had the idea to concretise my knowledge of matrices by making a Python module to manipulate them (even if it is "reinventing the wheel", as one already exists; this case is not for serious use, just to learn in both fields).
 2. Lambda functions used to be rather difficult for me to get my head around. I used avoid using them and I would have difficulty understanding their use in others' code. Recently while studying Javascript, I learnt about Arrow Functions, and I realised that it is similar to Lambda in Python. So this little project allows me to get a better grasp of Lambda use, practicing the equivalent of what I learnt in Javascript.
 3. To practice using Map, Reduce and Filter in Python. For the moment I have made good use of Map, but not yet the others.
@@ -14,6 +14,7 @@ Numpy contains some useful tools for manipulating matrices, but without looking 
 
 # Explanation
 This class construcs an object in the form of a tuple of tuples. E.g.:
+
 | R1C1 R1C2 |  is represented as ((R1C1, R2C1), (R1C2, R2C2)).
 
 | R2C1 R2C2 |
@@ -44,6 +45,7 @@ Numpy contient déjà des outils pour manipuler les matrices, mais sans les rega
 
 # Explication
 Cette classe construit un objet dans la forme d'un tuple de tuples, exemple : 
+
 | R1C1 R1C2 |  est representé comme ((R1C1, R2C1), (R1C2, R2C2)).
 
 | R2C1 R2C2 |
