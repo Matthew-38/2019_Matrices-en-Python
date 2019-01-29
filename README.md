@@ -16,8 +16,8 @@ Numpy contains some useful tools for manipulating matrices, but without looking 
 This class construcs an object in the form of a tuple of tuples. E.g.:
 
 | R1C1 R1C2 |  is represented as ((R1C1, R2C1), (R1C2, R2C2)).
-
 | R2C1 R2C2 |
+
 The current features are : addition and multiplication of matrices by matrices; addition, subtraction, multiplication and devision of matrices by a scalar; display (print); and transposing.
 
 Printing a matrix gives the following layout:
@@ -49,6 +49,7 @@ Cette classe construit un objet dans la forme d'un tuple de tuples, exemple :
 | R1C1 R1C2 |  est representé comme ((R1C1, R2C1), (R1C2, R2C2)).
 
 | R2C1 R2C2 |
+
 Les fonctionnalités actuelles sont : addition et multiplication des matrices par matrices ; addition, subtraction, multiplication et dévision des matrices par un scalar ; affichage (print) ; et transposer.
 L'affichage «print» de la matrice ci-dessus donnerait :
 (R1C1, R1C2
